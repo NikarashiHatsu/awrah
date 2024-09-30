@@ -1,0 +1,26 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "AuraLilyy.moc3",
+		"Textures": [
+			"AuraLilyy.4096/texture_00.png",
+			"AuraLilyy.4096/texture_01.png"
+		],
+		"Physics": "AuraLilyy.physics3.json",
+		"DisplayInfo": "AuraLilyy.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "Mic ON OFF.exp3.json",
+				"File": "Mic ON OFF.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	],
+	"HitAreas": []
+}

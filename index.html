@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load L2D in web</title>
+    <link rel="stylesheet" href="./build/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kaushan+Script&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .pattern {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%230000000F' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body>
+    <div class="w-full h-dvh relative overflow-hidden pattern">
+        <!-- NAME OVERLAY -->
+        <div class="absolute text-[15rem] font-slab tracking-[4rem] text-gray-700/25 top-[30rem]">
+            LILY
+        </div>
+        <!-- NAME OVERLAY -->
+
+        <!-- BOX OVERLAY -->
+        <div class="absolute top-1/2 -translate-y-1/2 grid grid-cols-7 grid-flow-row gap-12">
+            <div class="size-24 bg-[#fdd3da55]"></div>
+            <div class="size-24 bg-[#aac8e555]"></div>
+            <div class="size-24 bg-[#fdd3da55]"></div>
+            <div class="size-24 bg-[#aac8e555]"></div>
+            <div class="size-24 bg-[#fdd3da55]"></div>
+            <div class="size-24 bg-[#aac8e555]"></div>
+            <div class="size-24 bg-[#fdd3da55]"></div>
+            <div class="size-24 bg-[#aac8e555]"></div>
+            <div class="size-24 bg-[#fdd3da55]"></div>
+            <div class="size-24 bg-[#aac8e555]"></div>
+            <div class="size-24 bg-[#fdd3da55]"></div>
+            <div class="size-24 bg-[#aac8e555]"></div>
+            <div class="size-24 bg-[#fdd3da55]"></div>
+            <div class="size-24 bg-[#aac8e555]"></div>
+
+        </div>
+        <!-- BOX OVERLAY -->
+
+        <!-- L2D -->
+        <div class="absolute w-1/2 left-0 top-12 h-full" id="l2dContainer">
+            <canvas class="relative w-full h-full" id="l2d"></canvas>
+        </div>
+        <!-- L2D -->
+
+        <!-- PALETTE -->
+        <div class="grid grid-cols-3 grid-flow-row gap-4 m-8 absolute top-0 left-0">
+            <div class="size-10 bg-[#fdd3da] border-4 border-[#F97A8F55]"></div>
+            <div class="size-10 bg-[#f8b6d0] border-4 border-[#F0689D55]"></div>
+            <div class="size-10 bg-[#f8b6d0] border-4 border-[#F0689D55]"></div>
+            <div class="size-10 bg-[#aac8e5] border-4 border-[#6DA0D255] col-start-1 col-end-4"></div>
+            <div class="size-10 bg-[#85afd9] border-4 border-[#508CC855]"></div>
+        </div>
+        <!-- PALETTE -->
+
+        <!-- NAME -->
+        <div class="absolute flex flex-col w-[20rem] h-64 left-[32rem]">
+            <div class="relative top-0 left-0 z-10">
+                <div class="w-6 h-64 bg-[#fdd3da]"></div>
+                <div class="uppercase absolute -bottom-12 left-4 text-6xl font-slab text-gray-700/75 w-4 break-all text-center animate-[float_3s_ease-in-out_0ms_infinite]">
+                    Aura
+                </div>
+            </div>
+
+            <div class="relative mt-20 ml-32">
+                <div class="w-4 h-14 bg-[#aac8e5]"></div>
+                <div class="uppercase absolute -bottom-4 -left-8 text-5xl font-slab text-gray-700/75 w-4 break-all text-center animate-[float_3s_ease-in-out_500ms_infinite] animation-delay-[300ms]">
+                    Lily
+                </div>
+            </div>
+        </div>
+        <!-- NAME -->
+
+        <!-- DESCRIPTION -->
+        <div class="absolute w-[26rem] left-[44rem] top-28 font-slab text-gray-700/75 text-2xl leading-normal tracking-widest">
+            Awloo! Namaku Aura Lily, aku adalah peri yang nyasar gara-gara nyangkut di ekor Itsuki, terus kebawa deh ke bar 4R.
+        </div>
+        <!-- DESCRIPTION -->
+
+        <!-- RIGHT PANEL -->
+        <div class="absolute bottom-0 right-0 flex flex-col items-end z-10 p-6 font-slab">
+            <div class="flex items-center text-gray-800/40">
+                <a href="https://www.facebook.com/yuzuki.aurasha?_rdc=1&_rdr" class="text-lg">
+                    Aura Lily (アウラリリ)
+                </a>
+                <svg class="size-8 fill-current ml-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M232,128a104.16,104.16,0,0,1-91.55,103.26,4,4,0,0,1-4.45-4V152h24a8,8,0,0,0,8-8.53,8.17,8.17,0,0,0-8.25-7.47H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,8-8.53A8.17,8.17,0,0,0,167.73,80H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0-8,8.53A8.17,8.17,0,0,0,96.27,152H120v75.28a4,4,0,0,1-4.44,4A104.15,104.15,0,0,1,24.07,124.09c2-54,45.74-97.9,99.78-100A104.12,104.12,0,0,1,232,128Z"/></svg>
+            </div>
+            <div class="flex items-center text-gray-800/40 mt-4">
+                <a href="https://x.com/AuraLilyy" class="text-lg">
+                    @AuraLilyy
+                </a>
+                <svg class="size-8 fill-current ml-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M245.66,77.66l-29.9,29.9C209.72,177.58,150.67,232,80,232c-14.52,0-26.49-2.3-35.58-6.84-7.33-3.67-10.33-7.6-11.08-8.72a8,8,0,0,1,3.85-11.93c.26-.1,24.24-9.31,39.47-26.84a110.93,110.93,0,0,1-21.88-24.2c-12.4-18.41-26.28-50.39-22-98.18a8,8,0,0,1,13.65-4.92c.35.35,33.28,33.1,73.54,43.72V88a47.87,47.87,0,0,1,14.36-34.3A46.87,46.87,0,0,1,168.1,40a48.66,48.66,0,0,1,41.47,24H240a8,8,0,0,1,5.66,13.66Z"/></svg>
+            </div>
+            <div class="flex items-center text-gray-800/40 mt-4">
+                <a href="https://www.youtube.com/channel/UCKE7tk9WzOW666V0xLs8UWw" class="text-lg">
+                    Aura Lily Ch. アウラリリ 「4 REALITY」
+                </a>
+                <svg class="size-8 fill-current ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M234.33,69.52a24,24,0,0,0-14.49-16.4C185.56,39.88,131,40,128,40s-57.56-.12-91.84,13.12a24,24,0,0,0-14.49,16.4C19.08,79.5,16,97.74,16,128s3.08,48.5,5.67,58.48a24,24,0,0,0,14.49,16.41C69,215.56,120.4,216,127.34,216h1.32c6.94,0,58.37-.44,91.18-13.11a24,24,0,0,0,14.49-16.41c2.59-10,5.67-28.22,5.67-58.48S236.92,79.5,234.33,69.52Zm-73.74,65-40,28A8,8,0,0,1,108,156V100a8,8,0,0,1,12.59-6.55l40,28a8,8,0,0,1,0,13.1Z"/></svg>
+            </div>
+        </div>
+
+        <div class="absolute w-[1rem] h-[75rem] origin-bottom-left rotate-[25deg] bottom-0 right-[41rem] bg-blue-200 shadow-xl shadow-blue-700/25 border border-blue-400"></div>
+
+        <div class="flex flex-col absolute w-[70rem] h-[50rem] origin-bottom-left -rotate-[65deg] -bottom-[22rem] -right-[75rem] bg-red-200 font-slab py-6 px-16 text-gray-800/40 border border-red-300 shadow-2xl shadow-red-700/25 overflow-hidden">
+            <img class="absolute z-0 opacity-20 rotate-12 -left-12 -top-12 grayscale" src="./l2d/aura/aura-lily.webp" alt="">
+
+            <div class="text-3xl tracking-[0.3rem]">
+                Singing, Rebahan, Masuk Dalam Toples
+            </div>
+            <div class="text-6xl tracking-[0.4rem] mt-6 pl-12">
+                ABWANG
+            </div>
+        </div>
+        <!-- RIGHT PANEL -->
+    </div>
+
+    <script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/combine/gh/dylanNew/live2d/webgl/Live2D/lib/live2d.min.js,npm/pixi.js@6.5.2/dist/browser/pixi.min.js,npm/pixi-live2d-display/dist/index.min.js""></script>
+    <script src="./build/Live2dLoader.min.js"></script>
+    <script>
+        const load = async () => {
+            const canvas = document.getElementById("l2d");
+
+            const app = new PIXI.Application({
+                view: canvas,
+                width: canvas.clientWidth,
+                height: canvas.clientHeight,
+                resizeTo: canvas,
+                transparent: true,
+                antialias: true,
+                autoStart: true,
+            });
+
+            const model = await live2d.Live2DModel.from('./l2d/aura/auralilyy.model3.json');
+
+            model.scale.set(0.3);
+
+            app.stage.addChild(model);
+        }
+
+        load();
+    </script>
+</body>
+</html>
